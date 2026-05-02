@@ -8,10 +8,10 @@ This project implements the Apriori algorithm for mining frequent itemsets and g
 
 ## Features
 
-- **Upload CSV File**: Allows users to upload a CSV file containing transaction data.
-- **Show File Contents**: Displays the contents of the uploaded CSV file in a new window.
-- **Calculate Frequent Sets**: Computes frequent itemsets based on a specified percentage of transactions and minimum support count.
-- **Calculate Association Rules**: Generates strong association rules based on the frequent itemsets and a specified minimum confidence.
+- **Upload CSV File**: Allow users to upload a CSV file containing transaction data.
+- **Show File Contents**: Display the contents of the uploaded CSV file in a new window.
+- **Calculate Frequent Sets**: Compute frequent itemsets based on a specified percentage of transactions and minimum support count.
+- **Calculate Association Rules**: Generate strong association rules based on the frequent itemsets and a specified minimum confidence.
 
 ## Project Structure
 
@@ -49,7 +49,7 @@ Contains the core logic for reading transactions from the CSV file, generating f
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/apriori-algorithm.git
+    git clone https://github.com/MarioMedhat10/Apriori-Algorithm-with-GUI.git
     cd apriori-algorithm
     ```
 
@@ -94,25 +94,25 @@ TransactionNo,Items
 
 ### `ui_elements.py`
 
-- `create_ui_elements(window)`: Creates and layouts the UI elements in the main window.
+- `create_ui_elements(window)`: Create and layout the UI elements in the main window.
 
 ### `ui_trigger_functions.py`
 
-- `browse_file(label_file_path)`: Opens a file dialog to select a CSV file and updates the label with the file path.
-- `show_file_contents()`: Displays the contents of the uploaded CSV file in a new window.
-- `get_frequent_sets(entry_percentage, entry_min_support)`: Computes frequent itemsets based on the specified percentage of transactions and minimum support count.
-- `get_strong_association_rules(entry_percentage, entry_min_support, entry_min_confidence)`: Generates strong association rules based on the frequent itemsets and specified minimum confidence.
+- `browse_file(label_file_path)`: Open a file dialog to select a CSV file and update the label with the file path.
+- `show_file_contents()`: Display the contents of the uploaded CSV file in a new window.
+- `get_frequent_sets(entry_percentage, entry_min_support)`: Compute frequent itemsets based on the specified percentage of transactions and minimum support count.
+- `get_strong_association_rules(entry_percentage, entry_min_support, entry_min_confidence)`: Generate strong association rules based on the frequent itemsets and specified minimum confidence.
 
 ### `validation_functions.py`
 
-- `validate_numeric_input(input)`: Validates that the input is a numeric value.
-- `validate_decimal_input(input)`: Validates that the input is a decimal value.
+- `validate_numeric_input(input)`: Validate that the input is a numeric value.
+- `validate_decimal_input(input)`: Validate that the input is a decimal value.
 
 ### `logic.py`
 
-- `read_transactions(file_contents, percentage)`: Reads transactions from the CSV file based on the specified percentage.
-- `generate_frequent_itemsets(items_list, min_support_count)`: Generates frequent itemsets based on the specified minimum support count.
-- `generate_association_rules(frequent_item_sets, min_confidence, items_list)`: Generates strong association rules based on the frequent itemsets and specified minimum confidence.
+- `read_transactions(file_contents, percentage)`: Read transactions from the CSV file based on the specified percentage.
+- `generate_frequent_itemsets(items_list, min_support_count)`: Generate frequent itemsets based on the specified minimum support count.
+- `generate_association_rules(frequent_item_sets, min_confidence, items_list)`: Generate strong association rules based on the frequent itemsets and specified minimum confidence.
 
 ## License
 
